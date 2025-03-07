@@ -1,0 +1,28 @@
+
+Aws has 2 princing fundamentals, following the pay-as-you-go princing model
+
+Compute
+Pay for te compute time
+
+Store
+pay for data Stored in the cloud
+
+data transfer out of the cloud
+data transfer IN is free
+
+- regions
+a region is a clusters of data centers (buscar exlicacion)
+
+como elegir una region
+* complience (depende del los tipos de datos, y normatividad del uso de los mismos)
+* proximidad a usuarios (reducción de la latencia)
+* disponibilidad de servicios, existen servicios que no están disponibles en todas las regiones
+* precio los precios varian de region a region
+
+- availability zone (buscar explicacion)
+* normalmente cada region tiene diversas zonas de disponibilidad
+* each availability zne is one or more discrete data center with redundant power, networking and conectivity
+* ther are separeate fro each other so what theyre isolated from disasters
+* theyre connected with igh bandwidth ultra-low latency networking
+
+aws poins of presence (edge locations)
