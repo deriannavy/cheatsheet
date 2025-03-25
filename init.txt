@@ -26,3 +26,31 @@ como elegir una region
 * theyre connected with igh bandwidth ultra-low latency networking
 
 aws poins of presence (edge locations)
+
+iam => identity and access management
+root => account
+
+grupos pueden contener usuarios
+
+usuarios o grupos pueden tener permisos
+
+las politicas son listas de permisos que se le pueden asignar a grupos o usuarios
+
+[adjuntar un ejemplo como el siguiente]
+politicas
+policy structure
+version
+identity[
+   {
+      id
+      effect
+      principal: {
+         aws:[]
+      }
+      action:[
+         "getobject",
+         "getobject"
+      ]
+   }
+]
+----------
