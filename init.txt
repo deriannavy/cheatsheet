@@ -54,3 +54,23 @@ identity[
    }
 ]
 ----------
+rol ¿que es? y casos de uso
+
+----------
+ec2 config
+cpu
+ram
+
+-----
+nomenclaturas
+m5.2xlarge
+
+m => clase de la intancia
+5 =>  generacion
+2xlarge => tamaño
+
+---- 
+Security groups
+
+---- 
+EC2 instance connect
