@@ -123,3 +123,30 @@ Amazon fsx lustre scope (region)
 
 
 ----------
+elastic load balancer
+across multiple az
+4 ipos
+
+aplication load balancer (http/hppts/gRPC) layer 7
+network load balancer (tcp/udp) layer 4
+gateway (GENEVE ip pakets) layer 3
+
+----------
+scaling group
+scale out agrega más EC2 nistances
+scale in remueve ex2 instances
+replace inhealthy instances
+across multiple az
+----------
+scaling group estrategias
+* manual
+
+* simple / step scaling
+   when cloudwatch alarm is tirggered (example cpu > 70%), then add 2 unit
+   when cloudwatch alarm is tirggered (example cpu < 70%), then remove 1
+* target tracking scaling
+   example i want the average asg cpu to staty at arround 40%
+* Schedueled scalong
+   anticipades based on konw usage patterns
+* Predicted scaling
+   use machine learning to prefcit future traffic ahead f time
