@@ -74,3 +74,52 @@ Security groups
 
 ---- 
 EC2 instance connect
+
+
+
+----------
+EBS
+
+puedes attach a un ec2 
+puedes attach 2 ebs a un ec2
+o simplemente no estar ligados a nada
+
+delete on terminated
+(elimnina el ebs si esta activado una vez que la instancia se termina)
+
+estos no puedes conectarse a otras az
+
+ebs snapshot acchive permite mover tus snapshot a un archive tier para ahorrar dinero, normalmente recuerren más tiempo para restarurarlos (24 a 72)
+
+cuando los eliminas puedes decidir cuanto tiempo estarán en la papelera de reciclaje
+
+
+----------
+AMI => amazon machine image
+
+EC2 instant store ? drives volumes (me parece son sus nvme)
+
+----------
+Elastic file system
+
+puede ser montado en hasta 100 EC2 
+solo funciona con linux ec2 y es multi AZ
+alta disponibliidad escalable y 2x mas caro, se paga por uso 
+
+EFS infrecuent ACCess EFS-IA 
+hasta 92 de ahporro comparado con el EFS standar
+
+EFS movrera automatixamente tus archivos (esto con una politica de EFS IA)
+
+
+
+----------
+Amazon fsx 
+(es un efs en un servodor windows server)
+
+efs para windows scope (az)
+
+Amazon fsx lustre scope (region)
+
+
+----------
