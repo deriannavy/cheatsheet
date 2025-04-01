@@ -150,3 +150,43 @@ scaling group estrategias
    anticipades based on konw usage patterns
 * Predicted scaling
    use machine learning to prefcit future traffic ahead f time
+
+--------------
+S3
+buckets are directories
+bucket needs a name unique globally (across all regions)
+bucjets scope are regions
+key = the rest of the path
+key = pefix + object name
+max size = 5TB
+if upload more than 5gb must use multipart upload
+
+s3 replication (only if version exists)
+* cros regios replication
+* same regios replication
+proper IAM permision to s3
+
+
+S3 Storage Class
+* S3 standar low user for frequently accessed data (availability 99.99) (durability 99.999999999) 
+* s3 infrecuent access but require rapid access when needed (availability 99.9)
+* S3 one zone-infrecuent access in a single AZ (durability 99.5)
+* s3 Glacier low cost storage 
+* s3 glacier instant retrieval 
+* s3 glacier flexible retrieval (1,5 expedited, standar 3,5hours bulk, 5,12 hours)
+* s3 glacier deep archive standar (12 hours) bulk (48 horus)
+* s3 inteligent tiering 
+   
+S3 encryption
+server side
+client side
+
+IAM access analyzer for s3 (bitácora)
+---------
+Snow ball (investigar que diabos es)
+higly secure portable device to collect and proceess data at the edge
+---------
+AWS storage gateway (investigar)
+file gateway
+volume gateway
+tape gateway
