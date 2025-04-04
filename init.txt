@@ -190,3 +190,79 @@ AWS storage gateway (investigar)
 file gateway
 volume gateway
 tape gateway
+
+---------
+RDS & Aurora
+
+RDS (free tier)
+Aurora (no free tier) (5x mysql) (3x postgresql)
+
+RDS has multi region depoyment and multi az deployment
+---------
+Amazon ElastiCache
+
+redis etc example
+---------
+Dynamo db
+
+multi az depoyment
+---------
+Dynamo db acelerator
+in-memory cache
+
+dax only used to dynamo
+---------
+Dynamo db global table
+
+---------
+Redshift
+onlile analytical procesing (analytics and data warehousing)
+load data once every hour not every second
+10x better performance than other data warehouse
+column storage of datta
+
+---------
+AMAZON EMR
+
+stand fro elastic map reduce
+
+crate Hdoop cluster (big data)
+use cases: data procesing, machine learing, web indexing, big data
+---------
+AMAZON athena
+
+serverless query ervice to perform analytics against s3 objects
+uses sql language to query files
+suports CSV, JSON, ORC, Avro and Parquet (build on presto)
+
+princing $5 per TB of data scanned
+---------
+AMAZON quicksight
+serverless machine learning powered bussiness ingelligence server to create interactive dashboards
+
+princing per session
+
+---------
+DocumentDB = mongodb
+
+---------
+Amazon neptune
+graph database
+
+---------
+Amazon timestream 
+
+fullt managed fast scalable serverless time series database
+
+---------
+amazon managed blockchain
+
+join blockchain network
+
+---------
+Amazon glue = ETL
+
+---------
+Amazon DMS
+
+database migration service
