@@ -363,3 +363,13 @@ save code dependencies
 aws system manager (ssm)
 helps ,manage your ec2 and on-primes system at scale
 hybrid aws service
+
+
+---------
+route 53
+managed dns
+
+simple route policy = no healt check
+weight routing policy (some kind of LB)
+latency policy (locate the close server)
+failover check the primary on health check if not, redirect to failover
