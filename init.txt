@@ -373,3 +373,92 @@ simple route policy = no healt check
 weight routing policy (some kind of LB)
 latency policy (locate the close server)
 failover check the primary on health check if not, redirect to failover
+
+---------
+CloudFront
+scope (global)
+CDN content delivery network
+lower latency
+216 edge locations
+
+DDoS protection
+
+Origins
+* s3 bucket
+* Http (ec2, alb, s3 website enable as static s3 bucket)
+
+---------
+S3 transfer acceleration
+tool to see the put edge location
+
+---------
+aws global accelerator
+amplia la red local de aws para estar más cerca de los usuarios, una vez conectados al edge location mas
+cercano, la red de aws es más rápida
+
+
+---------
+aws outposts
+racks con los mismos servicios
+
+---------
+aws wavelength
+
+infraestructure low latenci on 5g networks
+
+---------
+aws local zones
+extend yout VPC to more locations
+ex: 
+   aws region: N.Virginia (us-east-1)
+   aws local zones: boston, chicago, dallas, houston, miami
+
+
+---------
+global app architecture
+single region, single az
+   x high availability
+   x global latency
+   digicult 1
+
+single region multiaz
+   * high availability
+   x global latency
+   digicult 3
+
+multi region active-passive
+   * high availability
+   * read global latency
+   x write global latency
+   digicult 5
+
+multi region active-active
+   * high availability
+   * read global latency
+   * write global latency
+   digicult 7
+
+
+---------
+Amazon SQS
+
+create a queue
+oldest aws oferring
+for 4 deys to maximun of 14 day
+no limits on how many messages can be in the queue
+low latency
+consumers share the work to read messages & scale horizontally
+FIFO queue
+cloud native, propietary protocols
+---------
+Amazon Kinesis
+real-time big data streaming
+
+---------
+Amazon SNS
+Pub/Sub
+cloud native, propietary protocols
+---------
+Amazon MQ
+open protocols
+mulit AZ
