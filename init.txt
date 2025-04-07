@@ -266,3 +266,110 @@ Amazon glue = ETL
 Amazon DMS
 
 database migration service
+
+
+---------
+ECR => Elastic container repository
+---------
+ECS => elastic container service
+run docker containers
+
+Fargate => Serverless offering
+
+
+---------
+EKS = elastic kubernetes service
+cloud-agnostci
+
+---------
+serverless
+just deploy code 
+just depoy functions
+ex: s3, dynamo, Fargate, lambda
+
+---------
+Lambda
+* event driven
+* cron job
+
+pay per calls
+   * first  1,000,000 calls are free
+pay per duration
+   * 400,000 BG-seconds
+   * 
+
+
+---------
+api gateway
+* proxy request
+* suport restful apis
+* support Security, user auth, api throttiling api keys, monitoring
+---------
+aws batch
+are defined as docker images and run on ECS
+same as lambda but you can set it on docker images 
+and the file system can be EFS or EBS
+also doest not have limit of time like lambda
+
+---------
+aws Lightsail
+virtual servers storage database and networking
+use templates
+has high availability but no auto-scaling limited aws integrations
+---------
+Cloudformation
+a declaravive way of outlining your aws infraestructure
+infraestructure as code
+
+to save costs
+you can automate deletetion of template from 8 to 5 
+(ingraestructure composer) (graph on aws)
+---------
+CDK
+define your cloud infraestructure 
+this "compile" to cloud formations template (json/yml)
+great for lambda / great for docker container in ECS / EKS
+
+---------
+Beanstalk
+is a developer centric view of deploying an app in aws
+Beanstalk = platform as a service
+
+single instance deploymnet (good for dev)
+LB + ASG: great for production or pre-production web applications
+asg only great for non-web apps in prod (workers etc)
+
+---------
+aws CodeDepoy (search for)
+
+allow to deploy smotly version of an app
+
+---------
+aws CodeCommit deprecation :(
+
+---------
+aws codebuild (github actions) (search for)
+only pay for the build time
+
+---------
+aws codepipeline (github actions) (search for)
+
+---------
+aws codeartifact (search for)
+save code dependencies
+(gradle, npm yarn )
+
+---------
+aws system manager (ssm)
+helps ,manage your ec2 and on-primes system at scale
+hybrid aws service
+
+
+---------
+route 53
+managed dns
+
+simple route policy = no healt check
+weight routing policy (some kind of LB)
+latency policy (locate the close server)
+failover check the primary on health check if not, redirect to failover
