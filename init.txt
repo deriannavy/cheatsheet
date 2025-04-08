@@ -462,3 +462,81 @@ cloud native, propietary protocols
 Amazon MQ
 open protocols
 mulit AZ
+
+
+---------
+CloudWatch Metrics & Alarms
+
+EC2 instances
+EBS volumess3 buckets
+billing
+service limits
+
+---------
+CloudWatch Logs
+from ec2 requiere iam permisions
+
+---------
+eventbridge
+schedule cron jobs
+
+default event bus services
+aws saas partners partenet bus
+custom apps custom event bus
+
+
+---------
+aws cloudtrail
+log de eventos en usuario registrados
+
+---------
+aws x-ray
+visual anlisis of logs on production
+
+---------
+amazon codeguru
+
+an ML powered service for automated code reviews
+(like a sonar)
+
+---------
+aws hearlt dashboards
+aws personal hearlt dashboards (for your account)
+
+provide u alerts qher events thay may impact you
+global service
+
+---------
+VPC 
+IP addrs in aws
+   ipv4 public (for ec2 generate a new one every time you stop and start it) (default)
+   ipv4 private (ec2 fixed)
+elastic ip allows u to attach a fiexed public ipv4 addres to ec2 instance
+
+all pv4 public on aws will be charged 0.005 x hour including EIP
+
+ipv6
+
+VPC = virtual priveate cloud (regional resource)
+subtets = allow you  to partition your networj inside your VPC (AZ resource)
+
+a public subnet can acces internet
+a private subnet cant acces internet
+
+---------
+Network ACL & Security groups
+
+NACL  a filewall which controls traffic from and to subnet
+can have allow or deny rules
+are attached to subnet level
+rules only inlcude ip addres
+
+
+to define access to the internet and bweteen subnets we use route tables
+
+internet gateway helps our vpc connect to internet
+
+NAT gateways (aws-managed) and NAT instances (self-managed) allows ur instances in PRIVATE subnets
+to access the internet while remaining private
+
+
