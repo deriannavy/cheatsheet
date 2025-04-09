@@ -373,3 +373,170 @@ simple route policy = no healt check
 weight routing policy (some kind of LB)
 latency policy (locate the close server)
 failover check the primary on health check if not, redirect to failover
+
+---------
+CloudFront
+scope (global)
+CDN content delivery network
+lower latency
+216 edge locations
+
+DDoS protection
+
+Origins
+* s3 bucket
+* Http (ec2, alb, s3 website enable as static s3 bucket)
+
+---------
+S3 transfer acceleration
+tool to see the put edge location
+
+---------
+aws global accelerator
+amplia la red local de aws para estar más cerca de los usuarios, una vez conectados al edge location mas
+cercano, la red de aws es más rápida
+
+
+---------
+aws outposts
+racks con los mismos servicios
+
+---------
+aws wavelength
+
+infraestructure low latenci on 5g networks
+
+---------
+aws local zones
+extend yout VPC to more locations
+ex: 
+   aws region: N.Virginia (us-east-1)
+   aws local zones: boston, chicago, dallas, houston, miami
+
+
+---------
+global app architecture
+single region, single az
+   x high availability
+   x global latency
+   digicult 1
+
+single region multiaz
+   * high availability
+   x global latency
+   digicult 3
+
+multi region active-passive
+   * high availability
+   * read global latency
+   x write global latency
+   digicult 5
+
+multi region active-active
+   * high availability
+   * read global latency
+   * write global latency
+   digicult 7
+
+
+---------
+Amazon SQS
+
+create a queue
+oldest aws oferring
+for 4 deys to maximun of 14 day
+no limits on how many messages can be in the queue
+low latency
+consumers share the work to read messages & scale horizontally
+FIFO queue
+cloud native, propietary protocols
+---------
+Amazon Kinesis
+real-time big data streaming
+
+---------
+Amazon SNS
+Pub/Sub
+cloud native, propietary protocols
+---------
+Amazon MQ
+open protocols
+mulit AZ
+
+
+---------
+CloudWatch Metrics & Alarms
+
+EC2 instances
+EBS volumess3 buckets
+billing
+service limits
+
+---------
+CloudWatch Logs
+from ec2 requiere iam permisions
+
+---------
+eventbridge
+schedule cron jobs
+
+default event bus services
+aws saas partners partenet bus
+custom apps custom event bus
+
+
+---------
+aws cloudtrail
+log de eventos en usuario registrados
+
+---------
+aws x-ray
+visual anlisis of logs on production
+
+---------
+amazon codeguru
+
+an ML powered service for automated code reviews
+(like a sonar)
+
+---------
+aws hearlt dashboards
+aws personal hearlt dashboards (for your account)
+
+provide u alerts qher events thay may impact you
+global service
+
+---------
+VPC 
+IP addrs in aws
+   ipv4 public (for ec2 generate a new one every time you stop and start it) (default)
+   ipv4 private (ec2 fixed)
+elastic ip allows u to attach a fiexed public ipv4 addres to ec2 instance
+
+all pv4 public on aws will be charged 0.005 x hour including EIP
+
+ipv6
+
+VPC = virtual priveate cloud (regional resource)
+subtets = allow you  to partition your networj inside your VPC (AZ resource)
+
+a public subnet can acces internet
+a private subnet cant acces internet
+
+---------
+Network ACL & Security groups
+
+NACL  a filewall which controls traffic from and to subnet
+can have allow or deny rules
+are attached to subnet level
+rules only inlcude ip addres
+
+
+to define access to the internet and bweteen subnets we use route tables
+
+internet gateway helps our vpc connect to internet
+
+NAT gateways (aws-managed) and NAT instances (self-managed) allows ur instances in PRIVATE subnets
+to access the internet while remaining private
+
+
