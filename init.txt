@@ -523,6 +523,16 @@ subtets = allow you  to partition your networj inside your VPC (AZ resource)
 a public subnet can acces internet
 a private subnet cant acces internet
 
+if a subnet is conected to internet gateway (this make it "public")
+if u want a private subnet u have to conect ur private subnet with a public subnet throght a NAT gateway
+
+internet gateway helps our vpc connect to internet
+
+NAT gateways (aws-managed) and NAT instances (self-managed) allows ur instances in PRIVATE subnets
+to access the internet while remaining private
+
+to define access to the internet and bweteen subnets we use route tables
+
 ---------
 Network ACL & Security groups
 
@@ -532,11 +542,45 @@ are attached to subnet level
 rules only inlcude ip addres
 
 
-to define access to the internet and bweteen subnets we use route tables
+Security groups are firewall that conrols trafict to and from an EC2 instance
+can have only allow rules
+can inlcude ip and other Security groups
 
-internet gateway helps our vpc connect to internet
 
-NAT gateways (aws-managed) and NAT instances (self-managed) allows ur instances in PRIVATE subnets
-to access the internet while remaining private
+
+---------
+VPC endpoint
+
+allows u to conecto to aws services using a private network instead of the public network
+
+vpc endpoint gateway : s3 y dynamo db
+
+VPC endpoint interface: most services including s3 & dynamo
+
+---------
+VPC endpoint private link (investigar)
+
+requiere Network load balancer
+
+---------
+VPC peearing
+is networking between 2 VPC
+
+---------
+VPN & Direct connect (DX)
+
+DX take at least a motnh to stablish (physical vpn)
+
+site-to-site vpn
+on-premises must use Customer gateway (CGW)
+Aws must use Virtual private gateway (VGW)
+
+---------
+Aws client VPN
+
+---------
+transit gateway
+
+graph to vpc and vpce 
 
 
