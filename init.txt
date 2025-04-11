@@ -659,3 +659,110 @@ amazon textract
 extract ocr recognition 
 
 
+---------
+aws shield
+
+aws shield standard
+
+aws shield advanced 24/7 premium DDoS
+
+
+
+---------
+aws WAF protect your web apps from coomos web exploits (layer 7)
+
+aws WAF filter specific request rules
+
+Define Web access control list
+
+---------
+AWS network firewall
+
+protect your entire VPC
+from layer 3 to 7
+
+
+---------
+AWS firewall manager
+
+managin Security groups on all accounts
+
+---------
+AWS KMS (key management service)
+
+CloudHSM => provision encryption hardware
+---------
+AWS Certificate Manager (ACM)
+
+certificados
+
+---------
+AWS Secrets Manager
+
+---------
+AWS Artifacts
+
+reports of agrements/complaints
+
+
+---------
+AWS GuardDuty
+
+inteligent theath discovery your aws account
+use machine learning alg anomay detection
+
+can proect against cripto attacks
+---------
+AWS Inspector
+
+autimaric security assessments
+
+for EC2
+for countainer images
+for lambda function
+
+---------
+AWS config
+
+help audiing and reconrding compliance of your aws resources
+
+---------
+AWS macie
+
+a fully managed data security and data privacy server
+
+te ayuda a encontrar datos sensibles
+
+
+---------
+AWS security hub
+
+security tool to manage security accross several aws accounts and automate security checks
+
+---------
+AWS Detective
+
+GuardDuty, macy and security hub are used to edentfy ptencial security issues
+
+analize, investiges (using ML and graphs)
+
+---------
+Root user privileges
+
+account owner
+
+lock away 
+
+only the root account
+
+change acount settings
+view certain tax invoces
+close aws account
+restore iam user permision
+change or cancel uour aws support plan
+regisrter as seller in the reserved instance marketplace
+
+---------
+IAM access analyzer
+
+find out witch resources are shared externally
