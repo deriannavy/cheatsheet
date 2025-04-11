@@ -584,3 +584,78 @@ transit gateway
 graph to vpc and vpce 
 
 
+---------
+Amazon rekognition
+
+recognize object, people, text, scens in images and viedeos using ml
+
+facial analysis and facial search to user verification, people counting
+
+create a database of familiar faces or compare against celebrities
+
+
+---------
+Amazon transcribe
+
+convert speech to text
+usgin ASR deep leearing process
+
+
+---------
+amazon polly 
+
+move text to audio
+
+
+---------
+amazon translate
+
+
+
+---------
+amazon lex
+
+automate speech recognition
+natura langiage undestanding to recognize the intend of text, callers
+help build chatbots, all center bots
+using for bots
+
+amazon connect
+
+call contact center
+flow ia support support
+
+
+---------
+amazon comprehend
+
+fully manage and serverless service
+natural procesing language
+user machine learning to find isignths and relationship in text
+
+
+---------
+amazon sagemaker
+
+fully managed service for developers / data sciencist to build ml models
+fine-tune model
+
+---------
+amazon kendra
+fully managed document search service powered by machine learning
+
+extract answers from whitihn a document
+
+
+---------
+amazon personalize
+
+fully managed ml service to build apps with real-time personalized recommendation
+
+
+---------
+amazon textract
+
+extract ocr recognition 
+
+
