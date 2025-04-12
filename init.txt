@@ -523,6 +523,16 @@ subtets = allow you  to partition your networj inside your VPC (AZ resource)
 a public subnet can acces internet
 a private subnet cant acces internet
 
+if a subnet is conected to internet gateway (this make it "public")
+if u want a private subnet u have to conect ur private subnet with a public subnet throght a NAT gateway
+
+internet gateway helps our vpc connect to internet
+
+NAT gateways (aws-managed) and NAT instances (self-managed) allows ur instances in PRIVATE subnets
+to access the internet while remaining private
+
+to define access to the internet and bweteen subnets we use route tables
+
 ---------
 Network ACL & Security groups
 
@@ -532,11 +542,227 @@ are attached to subnet level
 rules only inlcude ip addres
 
 
-to define access to the internet and bweteen subnets we use route tables
-
-internet gateway helps our vpc connect to internet
-
-NAT gateways (aws-managed) and NAT instances (self-managed) allows ur instances in PRIVATE subnets
-to access the internet while remaining private
+Security groups are firewall that conrols trafict to and from an EC2 instance
+can have only allow rules
+can inlcude ip and other Security groups
 
 
+
+---------
+VPC endpoint
+
+allows u to conecto to aws services using a private network instead of the public network
+
+vpc endpoint gateway : s3 y dynamo db
+
+VPC endpoint interface: most services including s3 & dynamo
+
+---------
+VPC endpoint private link (investigar)
+
+requiere Network load balancer
+
+---------
+VPC peearing
+is networking between 2 VPC
+
+---------
+VPN & Direct connect (DX)
+
+DX take at least a motnh to stablish (physical vpn)
+
+site-to-site vpn
+on-premises must use Customer gateway (CGW)
+Aws must use Virtual private gateway (VGW)
+
+---------
+Aws client VPN
+
+---------
+transit gateway
+
+graph to vpc and vpce 
+
+
+---------
+Amazon rekognition
+
+recognize object, people, text, scens in images and viedeos using ml
+
+facial analysis and facial search to user verification, people counting
+
+create a database of familiar faces or compare against celebrities
+
+
+---------
+Amazon transcribe
+
+convert speech to text
+usgin ASR deep leearing process
+
+
+---------
+amazon polly 
+
+move text to audio
+
+
+---------
+amazon translate
+
+
+
+---------
+amazon lex
+
+automate speech recognition
+natura langiage undestanding to recognize the intend of text, callers
+help build chatbots, all center bots
+using for bots
+
+amazon connect
+
+call contact center
+flow ia support support
+
+
+---------
+amazon comprehend
+
+fully manage and serverless service
+natural procesing language
+user machine learning to find isignths and relationship in text
+
+
+---------
+amazon sagemaker
+
+fully managed service for developers / data sciencist to build ml models
+fine-tune model
+
+---------
+amazon kendra
+fully managed document search service powered by machine learning
+
+extract answers from whitihn a document
+
+
+---------
+amazon personalize
+
+fully managed ml service to build apps with real-time personalized recommendation
+
+
+---------
+amazon textract
+
+extract ocr recognition 
+
+
+---------
+aws shield
+
+aws shield standard
+
+aws shield advanced 24/7 premium DDoS
+
+
+
+---------
+aws WAF protect your web apps from coomos web exploits (layer 7)
+
+aws WAF filter specific request rules
+
+Define Web access control list
+
+---------
+AWS network firewall
+
+protect your entire VPC
+from layer 3 to 7
+
+
+---------
+AWS firewall manager
+
+managin Security groups on all accounts
+
+---------
+AWS KMS (key management service)
+
+CloudHSM => provision encryption hardware
+---------
+AWS Certificate Manager (ACM)
+
+certificados
+
+---------
+AWS Secrets Manager
+
+---------
+AWS Artifacts
+
+reports of agrements/complaints
+
+
+---------
+AWS GuardDuty
+
+inteligent theath discovery your aws account
+use machine learning alg anomay detection
+
+can proect against cripto attacks
+---------
+AWS Inspector
+
+autimaric security assessments
+
+for EC2
+for countainer images
+for lambda function
+
+---------
+AWS config
+
+help audiing and reconrding compliance of your aws resources
+
+---------
+AWS macie
+
+a fully managed data security and data privacy server
+
+te ayuda a encontrar datos sensibles
+
+
+---------
+AWS security hub
+
+security tool to manage security accross several aws accounts and automate security checks
+
+---------
+AWS Detective
+
+GuardDuty, macy and security hub are used to edentfy ptencial security issues
+
+analize, investiges (using ML and graphs)
+
+---------
+Root user privileges
+
+account owner
+
+lock away 
+
+only the root account
+
+change acount settings
+view certain tax invoces
+close aws account
+restore iam user permision
+change or cancel uour aws support plan
+regisrter as seller in the reserved instance marketplace
+
+---------
+IAM access analyzer
+
+find out witch resources are shared externally
