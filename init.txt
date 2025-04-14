@@ -766,3 +766,90 @@ regisrter as seller in the reserved instance marketplace
 IAM access analyzer
 
 find out witch resources are shared externally
+
+---------
+aws organizations
+
+allows to manage multiple aws accounts
+global service
+main account is the master account
+
+restric account privileges using service control policies
+
+multiple OU (organization unit)
+
+consolidated billing
+
+
+---------
+AWS control tower
+
+control tower runs on top of organization
+consolas de frd
+
+---------
+AWS resource access manager (Aws RAM)
+
+share aws resurces that own with other aws accounts
+
+---------
+AWS service catalog
+
+create cloudform templates -> colletion of products -> controls (with access permissions (roles))
+
+
+---------
+AWS princing models
+
+pay as you go (pay for what u use)
+
+pay less by using more (volume-based discounts)
+
+pay less as AWS frows
+
+free services or free tier
+
+iam, vpc
+elastic beanstalk, cloudformation, auto scaling (you do, pay for the resources created)
+free tier (ec2 t2 micro, etc)
+
+compute pricing
+
+storage
+database
+
+---------
+savings plan
+
+commit a certain $ amunt per hour for 1 or 3 years
+
+
+---------
+aws compute optimazer
+
+reduce costs and imporve performace
+
+---------
+billing and costing tools
+
+pricing calculator
+   * estimate cost
+
+---------
+aws billing dashboard
+
+cost allocation tags (tags to clasify usage)
+
+csot explorer (visaliaizer tool)
+   forecast usage up to 12 months based on previous usage
+
+
+---------
+billing alarm in cloudwatch
+
+only stored on us-east-1
+
+---------
+aws budgets
+4 types of budgets usage, cost, reservation, saving plans
+
