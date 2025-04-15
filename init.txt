@@ -853,3 +853,176 @@ only stored on us-east-1
 aws budgets
 4 types of budgets usage, cost, reservation, saving plans
 
+---------
+aws cost anomaly detection
+
+continuously monitor your cost and usage using ML to detect unusual spends
+
+---------
+aws service quotas
+
+notify you when youre close to a service qouta vlaue threshold
+
+---------
+aws trusted advisor
+
+no need to install anythin - high level aws acount assessments
+
+---------
+support plans for aws
+
+basic support free
+
+developer
+bussiness
+enterprise on-ramp
+enterprise
+
+---------
+AWS STS (security token service)
+
+enable you to create temporalry limited-privileges credentials to access your aws resources
+
+
+---------
+Amazon Cognito
+
+identity for your web and mobile applications
+---------
+AWS directory services
+
+aws managed microsoft ad
+
+---------
+AWS iam identity cernter
+
+one login (single sing on) for all your
+
+used for aws
+
+---------
+Amazon Workspaces
+
+managed desktop as a service
+
+---------
+amazon appstream
+
+desktop application streaming service(como el anterior pero con apps)
+
+---------
+aws iot core
+
+stands for internet of thins
+
+---------
+amazon elastic transcoder
+
+use to convert media files stored in s3 into media files
+
+---------
+aws appsync
+
+store and sync data across
+graphql like
+
+---------
+aws amplify
+
+a set of tools and services that helps you develop and deploy scalabe fullstack web and mobile apps
+
+---------
+aws infrastructure composer
+
+visually design and biild serverles apps quickly on aws
+
+
+---------
+aws device farm
+
+run test concurrently on multiple devices
+(real devices)
+
+---------
+aws backup
+
+fully-managed service to centarlly manage and automate backups
+
+---------
+aws elastic disaster recovery
+
+quickly and easily recover your physical, virtual, and cloud-based servers in aws
+
+
+---------
+aws datasync
+
+move large amount of data from on-premises to aws
+incremental*
+
+---------
+cloud migration strategies
+
+retire 
+   * turn off things you dont need
+
+retain 
+   * do nothing for now
+
+relocate
+   * move apps from onpremises to its cloud version
+
+rehost lift and shift
+   * simple migrations by rehosting on aws
+
+replatform lift and rehsape
+   * example migrate your database to rds
+
+repurchase drop and shop
+   * moving to a diferente profuct
+
+refactor / re-architect
+   * remaingin how the app is architected using cloud native feature
+   * move from monotlitic app to microservices
+
+---------
+aws application discovery service
+plan migration projects by gatherung information about on-primises data centers
+
+---------
+aws application migration service
+
+lift and shif (rehost)
+
+---------
+aws migration evaluator
+
+heps you build a data-driven business case for migration to aws
+
+---------
+aws migration hub
+
+central location to collect servers and applications inventory data for the assessment,
+planning, and tracking of migrations to aws
+
+---------
+aws fault injection simulator (FIS)
+
+a fully managed service for running fault injection experiments on aws workloads
+
+---------
+aws step functions
+
+build serverless visual workflws to orchestrate your lambda functions
+
+---------
+aws ground station
+fully managed service that lets you control satellite communications process data and scale your
+satellite operation
+
+---------
+aws pinpoint
+scalable 2 way (outboind/inbount) marketing
+
+sms, email, push, voice delivery
+
