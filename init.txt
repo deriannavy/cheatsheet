@@ -1026,3 +1026,27 @@ scalable 2 way (outboind/inbount) marketing
 
 sms, email, push, voice delivery
 
+---------
+well architected framework
+
+* operacinoal excelence
+* security
+* realiability
+* performance efficiency
+* cost optimization
+* sustainability
+
+---------
+aws cloud adoption framework (aws CAF)
+
+helps uou build an then execute a comprehensive plan for your digital transformation trougth
+innovate use of aws
+
+CAF perpectives
+   Businness (helps your cloud inversment accelerate your digital transformation)
+   people (serves as a bridge between technology and Businness)
+   governance helps u orchestrate your cloud initiatives while maximizing organizacional benefits
+
+   platform helps u build an enterprice grade, scalable chubrid cloud platform
+   security heps u achieve the confidentialiyu integrity and availability of your data
+   operations heps ensure that your cloud services are deliveded
